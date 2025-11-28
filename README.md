@@ -35,6 +35,8 @@ O sistema precisa de um lugar para salvar os dados.
    ```sql
    CREATE DATABASE mc_sonae;
 
+---
+
 ### Passo 2: Baixar o Código
 Abra seu terminal (PowerShell ou Git Bash) e digite:
 
@@ -43,6 +45,8 @@ Abra seu terminal (PowerShell ou Git Bash) e digite:
 git clone https://github.com/Evandroj07/Projeto-McBot.git 
 
 cd Projeto-McBot
+
+---
 
 ### Passo 3: Criar o Ambiente Virtual
 Para não misturar as ferramentas deste projeto com outras coisas do seu computador, criamos uma "caixa isolada":
@@ -55,12 +59,16 @@ python -m venv venv
 .\venv\Scripts\Activate.ps1
 (Se aparecer um texto verde (venv) no começo da linha, deu certo!)
 
+---
+
 ### Passo 4: Instalar as Dependências
 Agora vamos baixar os "poderes" do projeto (leitores de PDF, gráficos, IA, etc). Isso pode demorar um pouco:
 
 **Terminal/VsCode**:
 
 pip install -r requirements.txt
+
+---
 
 ### Passo 5: Configurar a Senha
 O sistema precisa da senha do seu banco de dados local para funcionar.
@@ -74,6 +82,8 @@ Onde estiver escrito SUA_SENHA, troque pela senha do seu MySQL.
 Exemplo: De ...root:SUA_SENHA@... para ...root:123456@...
 
 Salve o arquivo.
+
+---
 
 ### ▶️ Como Rodar o Sistema
 Como temos um "Backend" e um "Frontend", precisamos de dois terminais abertos ao mesmo tempo.
@@ -96,12 +106,14 @@ Abra uma nova janela de terminal, ative o ambiente (.\venv\Scripts\Activate.ps1)
 streamlit run app_front.py
 O navegador abrirá automaticamente com o site!
 
+---
+
 ### 🧪 Como Usar a IA (Leitura de Documentos)
-Cadastro: No site, clique em "Não tem conta?" e crie um usuário.
+**Cadastro**: No site, clique em "Não tem conta?" e crie um usuário.
 
 Importante: Escolha o perfil Gerente ou Diretor (apenas eles têm permissão para processar dados).
 
-Login: Entre com seu email e senha.
+**Login**: Entre com seu email e senha.
 
 Upload:
 
@@ -112,6 +124,8 @@ Escolha a aba 📄 Upload de Arquivo.
 Envie um PDF, Word ou Excel que tenha uma data e um valor em dinheiro.
 
 Resultado: O sistema vai ler o arquivo e mostrar um resumo automático na tela.
+
+---
 
 ### 📞 Suporte
 Projeto desenvolvido por Evandro e Clara.
