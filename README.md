@@ -35,33 +35,34 @@ O sistema precisa de um lugar para salvar os dados.
    ```sql
    CREATE DATABASE mc_sonae;
 
-Passo 2: Baixar o Código
+### Passo 2: Baixar o Código
 Abra seu terminal (PowerShell ou Git Bash) e digite:
 
-Terminal/VsCode:
+**Terminal/VsCode**:
 
-git clone https://github.com/Evandroj07/Projeto-McBot.git
+git clone https://github.com/Evandroj07/Projeto-McBot.git 
+
 cd Projeto-McBot
 
-Passo 3: Criar o Ambiente Virtual
+### Passo 3: Criar o Ambiente Virtual
 Para não misturar as ferramentas deste projeto com outras coisas do seu computador, criamos uma "caixa isolada":
 
 No Windows:
 
-Terminal/VsCode:
+**Terminal/VsCode**:
 
 python -m venv venv
 .\venv\Scripts\Activate.ps1
 (Se aparecer um texto verde (venv) no começo da linha, deu certo!)
 
-Passo 4: Instalar as Dependências
+### Passo 4: Instalar as Dependências
 Agora vamos baixar os "poderes" do projeto (leitores de PDF, gráficos, IA, etc). Isso pode demorar um pouco:
 
-Terminal/VsCode:
+**Terminal/VsCode**:
 
 pip install -r requirements.txt
 
-Passo 5: Configurar a Senha
+### Passo 5: Configurar a Senha
 O sistema precisa da senha do seu banco de dados local para funcionar.
 
 Na pasta do projeto, abra o arquivo chamado config.py.
@@ -74,10 +75,10 @@ Exemplo: De ...root:SUA_SENHA@... para ...root:123456@...
 
 Salve o arquivo.
 
-▶️ Como Rodar o Sistema
+### ▶️ Como Rodar o Sistema
 Como temos um "Backend" e um "Frontend", precisamos de dois terminais abertos ao mesmo tempo.
 
-Janela 1: Ligando a API (Backend)
+**Janela 1**: Ligando a API (Backend)
 No terminal (com o venv ativo), digite:
 
 Terminal/VsCode:
@@ -87,15 +88,15 @@ Aguarde aparecer: Running on http://127.0.0.1:5000
 
 Não feche esta janela!
 
-Janela 2: Ligando o Painel (Frontend)
+**Janela 2**: Ligando o Painel (Frontend)
 Abra uma nova janela de terminal, ative o ambiente (.\venv\Scripts\Activate.ps1) e digite:
 
-Terminal/VsCode:
+**Terminal/VsCode**:
 
 streamlit run app_front.py
 O navegador abrirá automaticamente com o site!
 
-🧪 Como Usar a IA (Leitura de Documentos)
+### 🧪 Como Usar a IA (Leitura de Documentos)
 Cadastro: No site, clique em "Não tem conta?" e crie um usuário.
 
 Importante: Escolha o perfil Gerente ou Diretor (apenas eles têm permissão para processar dados).
@@ -112,5 +113,5 @@ Envie um PDF, Word ou Excel que tenha uma data e um valor em dinheiro.
 
 Resultado: O sistema vai ler o arquivo e mostrar um resumo automático na tela.
 
-📞 Suporte
+### 📞 Suporte
 Projeto desenvolvido por Evandro e Clara.
