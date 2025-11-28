@@ -1,0 +1,10 @@
+Flask
+Flask-SQLAlchemy
+Flask-Bcrypt
+Flask-JWT-Extended
+PyMySQL
+cryptography
+streamlit
+requests
+pandas
+plotly
