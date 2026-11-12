@@ -128,4 +128,4 @@ Resultado: O sistema vai ler o arquivo e mostrar um resumo automático na tela.
 ---
 
 ### 📞 Suporte
-Projeto desenvolvido por Evandro e Clara.
+Projeto desenvolvido por Evandro,Clara e Miguel.
